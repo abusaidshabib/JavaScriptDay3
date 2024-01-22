@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        /*
+        global scope
+        local scope
+        */
+        let value1 = 75;
+
+        if(value1){
+            let value2 = 85;
+            // console.log(value1)
+        }
+        function func1(){
+            let dummy = 89
+            // console.log(value1)
+        }
+
+        func1()
+
+        let object = {"value1": 1, "value2": "demo" }
+        let array = ["value1", "value2", 30, 40, 50]
+        // array[0] = 100;
+        // console.log(array.length)
+        for(i=0; i<5; i++){
+            console.log(array[i])
+        }
+    </script>
+</body>
+</html>
